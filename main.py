@@ -51,13 +51,13 @@ print(y["response"]["game_count"])
 for i in range(y["response"]["game_count"]):
     query = { "appid": y['response']['games'][i]['appid'] }
     mydoc = mycol.find(query)
-    for x in mydoc:
-        print(x)
-    if mydb.list_collection_names() == []:
+    if not mydb.list_collection_names():
+        print('1')
         entrie = {"name": y['response']['games'][i]['name'], "platform": "Steam", "Type": "Digital", "Location": "Digital", "img_icon": y['response']['games'][i]['img_icon_url'], "img_logo": y['response']['games'][i]['img_logo_url'], "appid": y['response']['games'][i]['appid']} 
         x = mycol.insert_one(entrie)
-    elif mydoc == '':
+    elif mydoc.count() == 0:
+        print(2)
         entrie = {"name": y['response']['games'][i]['name'], "platform": "Steam", "Type": "Digital", "Location": "Digital", "img_icon": y['response']['games'][i]['img_icon_url'], "img_logo": y['response']['games'][i]['img_logo_url'], "appid": y['response']['games'][i]['appid']} 
         x = mycol.insert_one(entrie)
     else:
-        print('Game match sorry')
+        print('Game exists in DB')
