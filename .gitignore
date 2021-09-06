@@ -8,3 +8,7 @@ core/__pycache__
 config_generator.py
 temp.json
 __pycache__
+dist
+build
+main.spec
+.gitignore
