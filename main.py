@@ -68,6 +68,7 @@ def Steamautoadd():
             #print('Game exists in DB')
             skipped += 1
     print(Fore.GREEN + f'Steam library update complete:\nNewly added game: {newlyadded}\nGames skipped: {skipped}')
+    pause()
 
 def ManualAdd():
     myclient = pymongo.MongoClient(DBaddress)
@@ -95,12 +96,16 @@ def ManualAdd():
 
 def main():
     loop = True
+    clear()
     while loop is True:
+        print(Fore.CYAN + art.text2art('Game-Tracker', font='block', chr_ignore=True))
         choice = int(input('What would you like to do today?\n1. Update your Steam Libreary\n2. Manually add a game\n3. Exit\n'))
         if choice == 1:
             Steamautoadd()
+            clear()
         elif choice == 2:
             ManualAdd()
+            clear()
         elif choice == 3:
             exit(0)
 

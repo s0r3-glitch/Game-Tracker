@@ -18,7 +18,6 @@ def CreateConfig():
                         'SteamID': ''}
     config['DBinfo'] = {'ClientAddress': '',
                         'ClientPort': '27017',
-                        'DBName': '',
-                        'CollectionName': 'N/A'}
+                        'DBName': ''}
     with open('config.ini', 'w') as configfile:
         config.write(configfile)
