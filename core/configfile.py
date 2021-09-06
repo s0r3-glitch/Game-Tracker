@@ -15,10 +15,10 @@ def ReadConfig(section, datatype):
 # Used to create the config file
 def CreateConfig():
     config['Steam'] = {'WebAPIkey': '',
-                        'AccessToken': 'N/A',
                         'SteamID': ''}
     config['DBinfo'] = {'ClientAddress': '',
-                        'DBName': 'mongodb://',
+                        'ClientPort': '27017',
+                        'DBName': '',
                         'CollectionName': 'N/A'}
     with open('config.ini', 'w') as configfile:
         config.write(configfile)

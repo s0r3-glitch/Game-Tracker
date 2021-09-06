@@ -4,4 +4,5 @@
 /steamCMD
 /temp
 /temp.py
-/core/__pycache__
+core/__pycache__
+config_generator.py
