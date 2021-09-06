@@ -7,3 +7,4 @@
 core/__pycache__
 config_generator.py
 temp.json
+__pycache__
