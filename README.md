@@ -5,22 +5,6 @@ There will be progression to allow for more automation in terms of digitally own
 For more information on what plans to be added and what you could help with please look at the projects page of this repo
 If you would like to contribute to this project please make a pull request and I will review it
 
-### Errors
-When using this program errors may arrise, in the event you get an error code please refer to the Errors.txt file to see what went wrong.
-The Errors.txt file will list the error saverity, what caused it, and a possible solution. If the solution doesnt work and you cant find a fix on google please contact s0r3-glitch
-
-
-### Config
-
-#### Steam
-webapikey: Your steam webapikey you can get one here https://steamcommunity.com/dev/apikey
-steamid = Your steam ID you can get this here https://steamdb.info/calculator/
-
-#### DBinfo
-clientip: The address of your mongoDB. Only put in the ip 
-clientport: The port of your mongoDB. Only use numbers
-dbname: The name of the DB you wish to use
-
 ## Goal
 The goal of this project is to allow people to keep track of the games they own both physically and digitally in a database.
 The current plan is to automate the process of adding digital steam games and possibly add a way to automate adding digital games from platforms like Playstation, Xbox, Orgins, Uplay, epic, etc.
