@@ -1,21 +1,22 @@
 This is a file dedicated to understanding errors that you might encouter well using this program.
 
 Code 0
-    Sevarity: Minimal
-    Problem: A config file was not found
-    Solution: Nothing needs to be done the program will automatically generate it.
+    Severity: Minimal
+    Problem: A config file was not found Solution: Nothing needs to be done.
+    The program will automatically generate it.
 
 Code 1
-    Sevarity: Fatal
+    Severity: Fatal
     Problem: The Web API key and Access Token are both valued at N/A or left blank.
-    Solution: Check your config.ini file and ensure that you populated the Web API key. If you dont know how to do so please look at the README on the repo.
+    Solution: Check your config.ini file and ensure that you populated the Web API key. If you dont know how to do so, please look at the README on the repo.
 
 Code 2
-    Sevarity: Fatal
+    Severity: Fatal
     Problem: The program was unable to create the config.ini file
-    Soultion: Attempt to run the porgram as administartor.
+    Solution: Attempt to run the program as administrator.
 
 Code 3
     Severity: Fatal
     Problem: The program is unable to read the config file.
-    Soultion: Attempt to run the porgram as administartor.
+    Solution: Attempt to run the program as administrator.
+
