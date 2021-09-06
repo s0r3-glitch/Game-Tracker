@@ -1,12 +1,9 @@
 # Game-Tracker
-## THIS PROJECT IS NOT FINISHED AND MAY NOT EVER BE FINISHED
-
-## Goal
-The goal of this project is to allow people to keep track of the games they own both physically and digitally in a database.
-The current plan is to automate the process of adding digital steam games and possibly add a way to automate adding digital games from platforms like Playstation, Xbox, Orgins, Uplay, epic, etc.
-In the event I finish this project I plan on making add ons that will use the database created from this project some idea would be random game selector, a GUI interface to view what you have and possible add games from there, and other things I think of.
-If you would like to contribute to this project feel free to modify the code and make a pull request all help is appreciated
-
+## Project state
+The core of this project is completed you can automatically add steam games to the DB and manually add other games.
+There will be progression to allow for more automation in terms of digitally owned game like Uplay, EA, Xbox, Playstation, etc.
+For more information on what plans to be added and what you could help with please look at the projects page of this repo
+If you would like to contribute to this project please make a pull request and I will review it
 
 ### Errors
 When using this program errors may arrise, in the event you get an error code please refer to the Errors.txt file to see what went wrong.
@@ -23,3 +20,9 @@ steamid = Your steam ID you can get this here https://steamdb.info/calculator/
 clientip: The address of your mongoDB. Only put in the ip 
 clientport: The port of your mongoDB. Only use numbers
 dbname: The name of the DB you wish to use
+
+## Goal
+The goal of this project is to allow people to keep track of the games they own both physically and digitally in a database.
+The current plan is to automate the process of adding digital steam games and possibly add a way to automate adding digital games from platforms like Playstation, Xbox, Orgins, Uplay, epic, etc.
+In the event I finish this project I plan on making add ons that will use the database created from this project some idea would be random game selector, a GUI interface to view what you have and possible add games from there, and other things I think of.
+If you would like to contribute to this project feel free to modify the code and make a pull request all help is appreciated
