@@ -9,10 +9,24 @@ import json
 # Manually adds games to the db
 def ManualAdd(DBaddress, DBname, data):
     local data
+    entrie = {}
     myclient = pymongo.MongoClient(DBaddress)
     mydb = myclient[DBname]
     mycol = mydb['Games']
     loop = True
+    while loop is True:
+      clear
+      for i in len(data):
+        entrie[data[i]] = str(input(f'Game {data[i]}: '))
+      x = mycol.insert_one(entrie)
+      temp = str(input('Would you like to add more game (yes or no):'))
+      temp = temp.title()
+      if temp == 'No':
+          loop = False
+        
+      
+    
+    '''
     while loop is True:
         clear()
         name = str(input('Name of the game:'))
@@ -32,6 +46,7 @@ def ManualAdd(DBaddress, DBname, data):
         temp = temp.title()
         if temp == 'No':
             loop = False
+            '''
 
 # Connecting to the MongoDO and specifying the DB we are going to use
 def Steamautoadd(DBaddress, DBname, WebAPIKey, SteamID):

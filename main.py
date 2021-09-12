@@ -34,7 +34,8 @@ def main():
             dbintra.Steamautoadd(DBaddress, DBname, Webapi, SteamID)
             clear()
         elif choice == 2:
-            dbintra.ManualAdd(DBaddress,DBaddress)
+            data = config.manualconfig()
+            dbintra.ManualAdd(DBaddress, DBaddress, data)
             clear()
         elif choice == 3:
             exit(0)

@@ -58,5 +58,5 @@ def steamconfig():
   return(WebAPIkey, SteamID)
   
 def manualconfig():
-  data = dict(config.ReadConfig('Manualaddinfo', 'Data'))
+  data = list(config.ReadConfig('Manualaddinfo', 'Data'))
   return data
