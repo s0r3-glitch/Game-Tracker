@@ -53,7 +53,7 @@ def Steamautoadd(DBaddress, DBname, WebAPIKey, SteamID):
     #print('beep')
     myclient = pymongo.MongoClient(DBaddress)
     mydb = myclient[DBname]
-    mycol = mydb['Games']
+    mycol = mydb['Games-manually-added']
     #print(mydb.list_collection_names())
     steamresponse = requests.get(f"https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key={WebAPIKey}&steamid={SteamID}&include_appinfo=1")
     y = json.loads(steamresponse.text)
