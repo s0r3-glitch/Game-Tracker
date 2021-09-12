@@ -1,3 +1,7 @@
+'''
+This file houses all of the testing functions. currently it is unused by the program, but in the future it will be ran as needed to prevent python from erroring out. the hope is that this file will end up giving out human readable error messages so that a user can refrence the wiki in order to get support of the errors
+'''
+
 import os
 from core.configfile import CreateConfig, ReadConfig
 from core.localcommands import clear, pause
@@ -7,7 +11,6 @@ from colorama import Fore, Back
 def checks():
     ConfigPresents()
     ConfigRead()
-    ConfigWebAPICheck()
 
 # Checks to make sure the config file exists if not it generates it
 def ConfigPresents():
