@@ -23,7 +23,10 @@ def CreateConfig():
     config['DBinfo'] = {'ClientAddress': '',
                         'ClientPort': '27017',
                         'DBName': ''}
-    config['Manualaddinfo'] = {'Data': 'name, platform, type, location'
+    config['Manualaddinfo'] = {'Data': 'name, platform, type, location'}
+    config['Xbox'] = {'ApplicationID': '',
+                      'SecretID': '',
+                      'XboxUID': ''}
     with open('config.ini', 'w') as configfile:
         config.write(configfile)
         
@@ -60,3 +63,9 @@ def steamconfig():
 def manualconfig():
   data = list(config.ReadConfig('Manualaddinfo', 'Data'))
   return data
+  
+def xboxconfig():
+  AppID = config.ReadConfig('Xbox', 'ApplicationID')
+  SecID = config.ReadConfig('Xbox', 'SecretID')
+  XUID = config.ReadConfig('Xbox', 'XboxUID')
+  return AppID, SecID, XUID

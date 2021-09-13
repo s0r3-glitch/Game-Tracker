@@ -38,6 +38,8 @@ def main():
             dbintra.ManualAdd(DBaddress, DBaddress, data)
             clear()
         elif choice == 3:
-            exit(0)
+            AppID, SecID, XUID = config.xboxconfig()
+        elif choice == 4:
+          exit(0)
 
 main()

@@ -16,6 +16,7 @@ def ManualAdd(DBaddress, DBname, data):
     loop = True
     while loop is True:
       clear
+      entrie = {}
       for i in len(data):
         entrie[data[i]] = str(input(f'Game {data[i]}: '))
       x = mycol.insert_one(entrie)

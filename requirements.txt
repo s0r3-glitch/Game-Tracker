@@ -1,3 +1,4 @@
 art
 colorama
 pymongo
+xbox-webapi
