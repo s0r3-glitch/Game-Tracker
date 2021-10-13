@@ -1,7 +1,7 @@
 # Game-Tracker
 [![GitHub issues](https://img.shields.io/github/issues/s0r3-glitch/Game-Tracker?style=for-the-badge)](https://github.com/s0r3-glitch/Game-Tracker/issues)
-[![GitHub forks](https://img.shields.io/github/forks/s0r3-glitch/Game-Tracker)](https://github.com/s0r3-glitch/Game-Tracker/network)
-[![GitHub stars](https://img.shields.io/github/stars/s0r3-glitch/Game-Tracker)](https://github.com/s0r3-glitch/Game-Tracker/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/s0r3-glitch/Game-Tracker?style=for-the-badge)](https://github.com/s0r3-glitch/Game-Tracker/network)
+[![GitHub stars](https://img.shields.io/github/stars/s0r3-glitch/Game-Tracker?style=for-the-badge)](https://github.com/s0r3-glitch/Game-Tracker/stargazers)
 
 ## Project state
 The core of this project is completed you can automatically add steam games to the DB and manually add other games.
